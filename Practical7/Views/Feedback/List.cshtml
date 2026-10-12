@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Feedback List";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<h2>Student Feedback List</h2>
+
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Enrollment No</th>
+            <th>Student Name</th>
+            <th>Subject</th>
+            <th>Rating</th>
+            <th>Comments</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.EnrollmentNo</td>
+                <td>@i.StudentName</td>
+                <td>@i.Subject</td>
+                <td>@i.Rating</td>
+                <td>@i.Comments</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+<p>
+    @Html.ActionLink("Give Feedback", "Create", "Feedback") |
+    @Html.ActionLink("View Feedback", "List", "Feedback")
+</p>

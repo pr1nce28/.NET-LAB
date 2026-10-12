@@ -1,0 +1,51 @@
+﻿@model prac7.Models.Feedback
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div>
+        @Html.Partial("_StudentInfo")
+
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(v => v.EnrollmentNo)</td>
+                    <td>@Html.EditorFor(v => v.EnrollmentNo)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.StudentName)</td>
+                    <td>@Html.TextBoxFor(model => model.StudentName)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Subject)</td>
+                    <td>@Html.TextBoxFor(model => model.Subject)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Rating)</td>
+                    <td>@Html.TextBoxFor(model => model.Rating)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Comments)</td>
+                    <td>@Html.TextBoxFor(model => model.Comments)</td>
+                </tr>
+            </table>
+            <p>
+                <input type="submit" value="Submit Feedback" />
+            </p>
+            <br />
+            <p>
+                @Html.ActionLink("Back to Home", "Index", "")
+            </p>
+        }
+    </div>
+</body>
+</html>
+

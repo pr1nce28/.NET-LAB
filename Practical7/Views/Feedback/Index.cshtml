@@ -1,0 +1,20 @@
+﻿@model prac7.Models.Feedback
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    @Html.Partial("_StudentInfo")
+    <div>
+        <p> @Html.ActionLink("Give Feedback", "Create", "Feedback") </p>
+        <p> @Html.ActionLink("View Feedback", "List", "Feedback") </p>
+    </div>
+</body>
+</html>
+
