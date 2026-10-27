@@ -9,3 +9,4 @@
 | [Practical 5](practical5/) | Leave Application (ASP.NET Web Forms — Multi-page Navigation) |
 | [Practical 6](Practical6/) | Product Catalog (ASP.NET MVC — Models, Controllers & Views) |
 | [Practical 7](Practical7/) | Student Feedback Management (ASP.NET MVC — Layouts & Partial Views) |
+| [Practical 8](Practical8/) | Inventory Management Module (ADO.NET & CRUD Operations) |
