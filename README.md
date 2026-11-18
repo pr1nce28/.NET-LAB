@@ -12,3 +12,4 @@
 | [Practical 8](Practical8/) | Inventory Management Module (ADO.NET & CRUD Operations) |
 | [Practical 9](Practical9/) | Placement Dashboard (Data Controls & Reports) |
 | [Practical 10](Practical10/) | Student Management REST API (ASP.NET Core Web API) |
+| [Practical 11](Practical11/) | Smart Campus Service Portal (ASP.NET MVC + ADO.NET / Web API Integration) |
